@@ -1,162 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.20/fullpage.css" integrity="sha512-wCVOuVtxsXqrQK7tj9j4BvyfITQmpp7UE7mVilD7aieGLYFEIAa5UKTP1RapOf6dxQ9JIKAneakcyykWG4r4Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./scripts.js"></script>
-    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wren Wilkerson — Software Engineer</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Wren Wilkerson</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>             
-            </ul>
-        </div>
-    </nav> 
-
-    <nav id="hamburger-nav">
-        <div class="logo">Wren Wilkerson</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li> <a href="#about" onclick="toggleMenu()">About</a> </li>
-                <li> <a href="#experience" onclick="toggleMenu()">Experience</a> </li>
-                <li> <a href="#projects" onclick="toggleMenu()">Projects</a> </li>
-                <li> <a href="#contact" onclick="toggleMenu()">Contact</a> </li>    
-            </div>
-        </div>
-    </nav> 
-
-
-    <div class="welcome">
-        <h1><i>Hello there, </i><br> I'm Wren Wilkerson.</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-    </div>
-
-
-
  
+<nav id="desktop-nav">
+  <div class="logo">Wren Wilkerson</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+ 
+<nav id="hamburger-nav">
+  <div class="logo">Wren Wilkerson</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+    <ul class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+ 
+<header id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="role">Software Engineering student &amp; IT support engineer</p>
+      <h1>Wren Wilkerson</h1>
+      <p class="lede">I spend my days keeping other people's systems running, and my nights learning to build the systems myself &mdash; currently finishing a B.S. in Software Engineering while working in technical support around Atlanta.</p>
+      <div class="links">
+        <a href="https://github.com/wrenwilkerson" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/wren-wilkerson-349813230" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:wilkersonwren144@gmail.com">Email</a>
+      </div>
+    </div>
+    <svg class="hero-tree" viewBox="0 0 220 320" aria-hidden="true">
+      <path d="M110 315 L110 190" stroke="var(--bark)" stroke-width="10" stroke-linecap="round"/>
+      <path d="M110 230 L70 190 M110 210 L150 165 M110 190 L85 150 M110 175 L135 130" stroke="var(--bark)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <g fill="var(--accent)">
+        <circle cx="108" cy="120" r="46"/>
+        <circle cx="60" cy="150" r="34"/>
+        <circle cx="158" cy="148" r="36"/>
+        <circle cx="80" cy="190" r="30"/>
+        <circle cx="140" cy="188" r="30"/>
+      </g>
+    </svg>
+  </div>
+</header>
+ 
+<main class="wrap">
+ 
+  <section id="about">
+    <h2><span class="leaf">&#127807;</span> About</h2>
+    <p>I'm pursuing a Bachelor of Science in Software Engineering at Western Governors University. Before and during that, I've worked support and field IT roles across the Atlanta area &mdash; troubleshooting production issues, keeping systems documented, and working alongside developers to escalate the harder problems. That's given me a practical sense of what breaks in real systems, which is a lot of why I want to be the one building them next.</p>
+    <div class="skills">
+      <span>C#</span><span>Java</span><span>Python</span><span>JavaScript</span>
+      <span>HTML</span><span>CSS</span><span>SQL</span><span>ITIL v4</span>
+    </div>
+  </section>
+ 
+  <section id="experience">
+    <h2><span class="leaf">&#127807;</span> Experience</h2>
+ 
+    <div class="job">
+      <time>Jan 2025 &mdash; Present</time>
+      <div>
+        <h3>Associate Technical Support Analyst</h3>
+        <div class="co">CDK Global &middot; Remote</div>
+        <p>Remote technical support for software and system issues via phone, chat, email, and ticketing. Troubleshoot application and connectivity problems, document resolutions, and meet SLA requirements.</p>
+      </div>
+    </div>
+ 
+    <div class="job">
+      <time>Oct 2024 &mdash; Jan 2025</time>
+      <div>
+        <h3>IT Help Desk Technician</h3>
+        <div class="co">RPI Print &middot; Kennesaw, GA</div>
+        <p>Technical support for laptops, desktops, printers, and business services, tracked through a ticketing system.</p>
+      </div>
+    </div>
+ 
+    <div class="job">
+      <time>Jun &mdash; Oct 2024</time>
+      <div>
+        <h3>IT Field Support</h3>
+        <div class="co">Wellstar / TEKsystems &middot; Smyrna, GA</div>
+        <p>Installed operating systems, managed Active Directory accounts, and resolved EPIC application issues for enterprise users.</p>
+      </div>
+    </div>
+ 
+    <div class="job">
+      <time>Mar 2023 &mdash; Jul 2024</time>
+      <div>
+        <h3>Desktop Administrator</h3>
+        <div class="co">HC Brands &middot; Jacksonville, FL</div>
+        <p>Diagnosed hardware and software issues, maintained IT documentation, and collaborated with development teams using GitHub &mdash; working alongside the Front End Engineer on code cleanup and QA.</p>
+      </div>
+    </div>
+ 
+    <div class="job">
+      <time>Jun 2019 &mdash; Mar 2023</time>
+      <div>
+        <h3>Mobile Repair Technician</h3>
+        <div class="co">uBreakiFix &middot; Kennesaw, GA</div>
+        <p>Diagnosed and repaired mobile devices, recognized for the fastest repair times with zero post-repair issues.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="projects">
+    <h2><span class="leaf">&#127807;</span> Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Mock Georgia State Website</h3>
+        <div class="stack">HTML &middot; CSS &middot; JavaScript</div>
+        <p>A mock government site with email validation and error handling, deployed live via GitLab Pages.</p>
+      </div>
+      <div class="card">
+        <h3>Snake Game</h3>
+        <div class="stack">Python &middot; OOP</div>
+        <p>A Python implementation of Snake built with object-oriented design, including collision detection, score tracking, and real-time gameplay.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <section id="contact">
+    <h2><span class="leaf">&#127807;</span> Contact</h2>
+    <div class="contact-box">
+      <a href="mailto:wilkersonwren144@gmail.com">wilkersonwren144@gmail.com</a>
+      <a href="https://linkedin.com/in/wren-wilkerson-349813230" target="_blank" rel="noopener">linkedin.com/in/wren-wilkerson-349813230</a>
+      <a href="https://github.com/wrenwilkerson" target="_blank" rel="noopener">github.com/wrenwilkerson</a>
+    </div>
+  </section>
+ 
+</main>
+ 
+<footer>built by Wren Wilkerson</footer>
+ 
+<script src="scripts.js"></script>
 </body>
 </html>
-
-
-
-
-
