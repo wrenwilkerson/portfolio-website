@@ -5,6 +5,8 @@ function toggleMenu(){
 let leafPileCount = 0;
 
 function spawnFallingLeaf(sourceEl){
+  sourceEl.classList.add('leaf-launched');
+
   const rect = sourceEl.getBoundingClientRect();
   const startX = rect.left + rect.width / 2 + window.scrollX;
   const startY = rect.top + rect.height / 2 + window.scrollY;
@@ -60,4 +62,9 @@ function setupLeafObserver(){
   leaves.forEach((leaf) => observer.observe(leaf));
 }
 
-document.addEventListener('DOMContentLoaded', setupLeafObserver);
+function initLeavesOnFirstScroll(){
+  setupLeafObserver();
+  window.removeEventListener('scroll', initLeavesOnFirstScroll);
+}
+
+window.addEventListener('scroll', initLeavesOnFirstScroll, { passive: true });
