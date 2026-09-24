@@ -387,7 +387,51 @@ p {
   font-size: 14.5px;
 }
 
-/* contact */
+/* snake game */
+
+.game-wrap {
+  margin-top: 16px;
+}
+
+.game-hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--ink-dim);
+}
+
+.game-hud strong {
+  color: var(--ink);
+}
+
+.fun-btn.small {
+  margin-top: 0;
+  padding: 6px 14px;
+  font-size: 12.5px;
+}
+
+#snake-canvas {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#snake-canvas:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.game-hint {
+  margin: 8px 0 0;
+  font-size: 12.5px;
+  color: var(--ink-dim);
+}
 
 .contact-box {
   display: flex;
