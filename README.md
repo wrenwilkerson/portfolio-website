@@ -9,10 +9,14 @@ About
 A one-page site covering my background, work experience, and a couple of personal projects, built while I finish my B.S. in Software Engineering at Western Governors University.
 
 Built with
+
 HTML5
 CSS3 (custom properties, flexbox, grid, prefers-color-scheme for dark mode)
+
 Vanilla JavaScript (mobile nav toggle)
+
 Project structure
+
 portfolio-website/
 ├── index.html          # page structure and content
 ├── styles.css          # colors, layout, typography
