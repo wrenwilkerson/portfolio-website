@@ -2,6 +2,26 @@ function toggleMenu(){
   document.querySelector('.menu-links').classList.toggle('open');
 }
 
+function setupScrollspy(){
+  const sections = document.querySelectorAll('main section[id]');
+  const navLinks = document.querySelectorAll('#desktop-nav .nav-links a');
+  if(!sections.length || !navLinks.length || !('IntersectionObserver' in window)) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if(entry.isIntersecting){
+        navLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+
+  sections.forEach((section) => observer.observe(section));
+}
+
+document.addEventListener('DOMContentLoaded', setupScrollspy);
+
 function spawnConfettiLeaf(){
   const leaf = document.createElement('span');
   leaf.className = 'confetti-leaf';
