@@ -34,15 +34,6 @@ portfolio-website/
 └── CNAME                 # custom domain for GitHub Pages
 ```
 
-## Running locally
-
-No build tools needed — just open `index.html` in a browser, or serve the folder locally:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
 
 ## Deployment
 
