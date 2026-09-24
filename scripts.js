@@ -2,6 +2,46 @@ function toggleMenu(){
   document.querySelector('.menu-links').classList.toggle('open');
 }
 
+function spawnConfettiLeaf(){
+  const leaf = document.createElement('span');
+  leaf.className = 'confetti-leaf';
+  leaf.textContent = '\u{1F33F}';
+
+  const startX = Math.random() * window.innerWidth;
+  const drift = (Math.random() - 0.5) * 220;
+  const spin = 180 + Math.random() * 540;
+  const duration = 2.5 + Math.random() * 2;
+  const size = 14 + Math.random() * 12;
+
+  leaf.style.left = startX + 'px';
+  leaf.style.fontSize = size + 'px';
+  leaf.style.setProperty('--drift', drift + 'px');
+  leaf.style.setProperty('--spin', spin + 'deg');
+  leaf.style.animationDuration = duration + 's';
+
+  document.body.appendChild(leaf);
+  setTimeout(() => leaf.remove(), duration * 1000 + 150);
+}
+
+function shakeTree(){
+  const tree = document.querySelector('.hero-tree');
+  if(tree){
+    tree.classList.remove('shake');
+    void tree.offsetWidth;
+    tree.classList.add('shake');
+  }
+
+  const leafCount = 24;
+  for(let i = 0; i < leafCount; i++){
+    setTimeout(spawnConfettiLeaf, Math.random() * 500);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const funButton = document.getElementById('fun-button');
+  if(funButton) funButton.addEventListener('click', shakeTree);
+});
+
 let leafPileCount = 0;
 
 function spawnFallingLeaf(sourceEl){
