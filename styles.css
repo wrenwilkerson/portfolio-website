@@ -230,6 +230,11 @@ h2 {
   font-size: 18px;
 }
 
+.leaf.leaf-launched {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 p {
   margin: 0 0 16px;
   color: var(--ink-dim);
