@@ -126,8 +126,16 @@
       </div>
       <div class="card">
         <h3>Snake Game</h3>
-        <div class="stack">Python &middot; OOP</div>
-        <p>A Python implementation of Snake built with object-oriented design, including collision detection, score tracking, and real-time gameplay.</p>
+        <div class="stack">Python &middot; OOP &middot; playable JS demo below</div>
+        <p>A Python implementation of Snake built with object-oriented design, including collision detection, score tracking, and real-time gameplay. Here's a JavaScript version of the same game you can actually play:</p>
+        <div class="game-wrap">
+          <div class="game-hud">
+            <span>Score: <strong id="snake-score">0</strong></span>
+            <button id="snake-restart" class="fun-btn small" type="button">Restart</button>
+          </div>
+          <canvas id="snake-canvas" width="320" height="320" tabindex="0"></canvas>
+          <p class="game-hint">Click the board, then use arrow keys or WASD.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -146,5 +154,6 @@
 <footer><span id="footer-text">built by Wren Wilkerson</span></footer>
 
 <script src="scripts.js"></script>
+<script src="snake.js"></script>
 </body>
 </html>
