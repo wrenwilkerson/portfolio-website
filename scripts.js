@@ -6,6 +6,9 @@ let leafPileCount = 0;
 
 function spawnFallingLeaf(sourceEl){
   sourceEl.classList.add('leaf-launched');
+  setTimeout(() => {
+    sourceEl.classList.remove('leaf-launched');
+  }, 3000);
 
   const rect = sourceEl.getBoundingClientRect();
   const startX = rect.left + rect.width / 2 + window.scrollX;
