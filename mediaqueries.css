@@ -1,6 +1,11 @@
 @media (max-width: 900px) {
   .vine {
-    display: none;
+    left: 8px;
+    width: 2px;
+  }
+ 
+  .vine-leaf {
+    font-size: 15px;
   }
 }
  
@@ -31,4 +36,3 @@
     grid-template-columns: 1fr;
   }
 }
- 
